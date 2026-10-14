@@ -1,0 +1,220 @@
+=== Golden Dataset Generator (Ukrainian) ===
+
+C:\Users\Sergey\AppData\Local\Programs\Python\Python314\Lib\site-packages\langchain_core\_api\deprecation.py:25: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.
+  from pydantic.v1.fields import FieldInfo as FieldInfoV1
+Завантажено 462 chunk'ів з index\chunks.pkl
+Генерую 20 прикладів через Ragas (Ukrainian)...
+Applying SummaryExtractor: 100%|██████████████████████████████████████████| 291/291 [05:55<00:00,  1.22s/it]
+Applying CustomNodeFilter:   0%|                                                    | 0/462 [00:00<?, ?it/s]Node 21aa815b-d44b-452e-8837-074b327e700c does not have a summary. Skipping filtering.
+Node 029c1061-2ba1-4c4e-ad99-d3afc697dce8 does not have a summary. Skipping filtering.
+Node 2344a2ba-f4f4-4cc0-8b9a-d008459141f6 does not have a summary. Skipping filtering.
+Node 941f0247-b0ac-4e51-adde-107fefac9fdb does not have a summary. Skipping filtering.
+Node 007bca2a-6d5e-4d03-855b-b4d9c32eef56 does not have a summary. Skipping filtering.
+Node b1caeec5-8ed3-49fa-b719-19a2acfbe964 does not have a summary. Skipping filtering.
+Node f292f7ce-0d88-45b2-8374-d1eedef161f5 does not have a summary. Skipping filtering.
+Node d5eea585-a869-47db-8e75-bc1bce440b89 does not have a summary. Skipping filtering.
+Node 2b272803-f360-40a6-97e7-fe55a2adb481 does not have a summary. Skipping filtering.
+Node 4a8ea425-d4cb-427e-ad4e-b1a45fa4565d does not have a summary. Skipping filtering.
+Node d48428e3-b879-4ad5-9eab-a1d847a71bf3 does not have a summary. Skipping filtering.
+Node 827de974-9d8e-4b74-a3aa-76d38a4aba31 does not have a summary. Skipping filtering.
+Node 8e2f06a7-d0af-430f-9e1f-553c94295edc does not have a summary. Skipping filtering.
+Node b2bcf475-4980-4ed0-b497-0c6b404e0409 does not have a summary. Skipping filtering.
+Node 0adaa8be-e6e3-4052-85a0-b2cf8a8ff22e does not have a summary. Skipping filtering.
+Node 739754a4-f957-46b7-b228-190e2858ab4f does not have a summary. Skipping filtering.
+Node 8067647e-dd63-4332-a5b7-30ca57232919 does not have a summary. Skipping filtering.
+Node c8993ddb-38ec-484d-9c8c-ce8587903579 does not have a summary. Skipping filtering.
+Node d56cb868-e484-4016-a661-1262449f64c0 does not have a summary. Skipping filtering.
+Node 1c3828a6-d9f2-4365-8df1-4b64ce4496e8 does not have a summary. Skipping filtering.
+Node 86c36004-f726-47a1-a59e-7b5c5f7d5bc4 does not have a summary. Skipping filtering.
+Node f350f493-70a8-4e16-be13-f5dacc54f344 does not have a summary. Skipping filtering.
+Node 13af8b21-12a3-49f8-8fd2-d047bc006e34 does not have a summary. Skipping filtering.
+Node 8d3de294-0d23-443e-9040-dc094f8cfcd8 does not have a summary. Skipping filtering.
+Node 54afa3cf-5f88-4d0f-a2f8-06d18b9bb34a does not have a summary. Skipping filtering.
+Node 2ebb2c8d-0b5f-4770-bb69-c3ccc90cb2dd does not have a summary. Skipping filtering.
+Node bd447517-6b52-4858-b305-00b095bfc8d5 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:   6%|██▌                                        | 27/462 [00:01<00:27, 15.62it/s]Node f5df5841-9ea8-4f20-8b1b-2b0e314eb7a9 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:   6%|██▋                                        | 29/462 [00:02<00:48,  8.90it/s]Node 6ff39693-524f-4e12-9d11-767e9a4929b0 does not have a summary. Skipping filtering.
+Node cce5c090-d9a6-4b57-9749-e7d46a03fed7 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:   7%|██▉                                        | 31/462 [00:04<01:13,  5.89it/s]Node df8e8ab0-3be6-466a-b6d4-4f0df077538e does not have a summary. Skipping filtering.
+Node e9f41e9e-c9c4-4701-ae76-3ba93686d6bc does not have a summary. Skipping filtering.
+Node 05648fe5-4f56-4f79-b54f-c277e55e485c does not have a summary. Skipping filtering.
+Node bf127d50-6086-4716-b8e0-d4abc44f3805 does not have a summary. Skipping filtering.
+Node 547d365c-051e-440a-8a9d-9052235031bb does not have a summary. Skipping filtering.
+Node 16a16f49-5198-4049-a68a-575ac3553bf9 does not have a summary. Skipping filtering.
+Node 520a3b81-aea5-479c-b03d-6e737358d13c does not have a summary. Skipping filtering.
+Node c03a0d58-7323-400d-aaa5-cf488e5193e6 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:   8%|███▎                                       | 35/462 [00:18<07:30,  1.06s/it]Node f60e1711-0a0a-46f1-8eff-bd289f494b88 does not have a summary. Skipping filtering.
+Node dc69a0af-34dc-4f85-b34c-7b500320a98c does not have a summary. Skipping filtering.
+Node 17d44415-9d74-43fe-a075-3a96bf985a84 does not have a summary. Skipping filtering.
+Node bb9716cb-6e30-4cb8-b295-311c9c10922e does not have a summary. Skipping filtering.
+Node 9b894e56-3779-457b-a317-4ade025e3b4e does not have a summary. Skipping filtering.
+Node 3df37d32-b35a-445d-a07f-7598b3c0e89f does not have a summary. Skipping filtering.
+Node 57ba0bd4-0345-4041-8fc7-919b0a79dd17 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  13%|█████▊                                     | 62/462 [00:19<02:14,  2.98it/s]Node e9a06879-7fb0-4c9a-a3ff-004fb3d09c48 does not have a summary. Skipping filtering.
+Node dd3587fd-e8c7-4f13-9754-fa232a941b6a does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  15%|██████▎                                    | 68/462 [00:25<03:07,  2.10it/s]Node 6decb15b-76fe-420a-b1d7-b82dc1de5fab does not have a summary. Skipping filtering.
+Node 2ae6bd5d-2d45-4ea9-af20-483a979fa247 does not have a summary. Skipping filtering.
+Node fea1a168-1823-4d85-91ef-aec050ebe63d does not have a summary. Skipping filtering.
+Node 6cd23e7b-d8b0-467a-9995-1610e0a17f8a does not have a summary. Skipping filtering.
+Node 0976699c-ac38-4f7d-aef0-6d7d36790d73 does not have a summary. Skipping filtering.
+Node 4f24e7b2-fefc-4878-a323-982d3f199efc does not have a summary. Skipping filtering.
+Node b87b03f7-4441-4314-9934-fa3b06c14392 does not have a summary. Skipping filtering.
+Node 7e2c946a-8dea-40c2-8600-6783141d2577 does not have a summary. Skipping filtering.
+Node db84cecc-71b1-451d-baaf-a89747f69aea does not have a summary. Skipping filtering.
+Node ad7848c3-91ff-44d1-affc-2137164b233e does not have a summary. Skipping filtering.
+Node 4519eb9f-a458-4367-a3f7-29b565c1d7a5 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  15%|██████▌                                    | 70/462 [00:41<08:15,  1.26s/it]Node 971b67d6-03b8-4df0-b1a9-dd5972e7d2d8 does not have a summary. Skipping filtering.
+Node 79d2da33-0eff-4eed-93d1-f48f681dcd36 does not have a summary. Skipping filtering.
+Node b67b0d04-5215-40eb-866b-6e6a09f1281e does not have a summary. Skipping filtering.
+Node ea2e3f2d-830a-4761-b5ec-46dac2339750 does not have a summary. Skipping filtering.
+Node 5aa93f89-600c-4967-8ffa-14ec915e08d5 does not have a summary. Skipping filtering.
+Node 190bf9da-f355-47e2-9d31-8b81932e8508 does not have a summary. Skipping filtering.
+Node 0ff694c0-8d7f-480a-9f00-0f95591b8cdc does not have a summary. Skipping filtering.
+Node 5808a9b9-6e09-46ca-bedc-8069cfab24d9 does not have a summary. Skipping filtering.
+Node 6d199fa6-6e8c-48b5-b7e0-604b58c074d1 does not have a summary. Skipping filtering.
+Node 904bf30c-442b-48c7-b373-206cbaf892b1 does not have a summary. Skipping filtering.
+Node c3682c4c-36c7-475a-bc4b-3c6a609105ac does not have a summary. Skipping filtering.
+Node 4b0f3b89-aa5a-482c-939d-4199e59059bb does not have a summary. Skipping filtering.
+Node db7d8b55-98aa-46e0-a819-50abc899ce66 does not have a summary. Skipping filtering.
+Node 155120ee-3850-4b1c-96f8-031def0f319d does not have a summary. Skipping filtering.
+Node e0b54e9a-0173-44f0-b362-713c65f63228 does not have a summary. Skipping filtering.
+Node fcb5815e-d2d7-4e09-98a1-9ee0dc8a9487 does not have a summary. Skipping filtering.
+Node ec588d99-c50a-4f88-90bc-f25612138c26 does not have a summary. Skipping filtering.
+Node c8eed2b4-68b1-45c7-8ba4-b4fa35474398 does not have a summary. Skipping filtering.
+Node fa90aa15-f219-4e2e-b001-9758fd7d48bf does not have a summary. Skipping filtering.
+Node 02d32064-ef04-48f6-93e1-0030abd70e6a does not have a summary. Skipping filtering.
+Node 1de77faa-77b3-45ae-860e-026294b8c706 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  25%|██████████▌                               | 116/462 [00:44<01:50,  3.13it/s]Node a8d06df6-8cdd-4c65-9c35-7df93a3164b0 does not have a summary. Skipping filtering.
+Node 73dd1d1b-c55d-4939-a731-21c9b4c3cfbc does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  26%|██████████▋                               | 118/462 [00:46<02:03,  2.79it/s]Node acdde04c-8f57-489d-ab31-f6ca75ea227a does not have a summary. Skipping filtering.
+Node 2a50e6d1-2933-4aff-a11c-b7e160c317a9 does not have a summary. Skipping filtering.
+Node e04695a3-466e-4444-adc0-27bb1e6a6388 does not have a summary. Skipping filtering.
+Node 92998284-c998-48a4-9062-3748d281c0ae does not have a summary. Skipping filtering.
+Node 2274cf76-11e0-4d39-bc6e-439512fbd9fe does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  27%|███████████▍                              | 126/462 [00:48<01:50,  3.05it/s]Node c017c4bf-b750-41bd-97f4-ac2a760c01f3 does not have a summary. Skipping filtering.
+Node fd0296c6-2e6f-47d0-b2dc-6b197f7f03bc does not have a summary. Skipping filtering.
+Node bfbdc254-1ca5-44ce-95ed-37a6a1c87151 does not have a summary. Skipping filtering.
+Node 33ed483f-eef7-4d9a-8fce-27f6009d66ad does not have a summary. Skipping filtering.
+Node 7b68c467-aa78-4c62-990a-fd66cc653d21 does not have a summary. Skipping filtering.
+Node b794f80e-c63d-46c7-9906-ac4503310ef9 does not have a summary. Skipping filtering.
+Node d57e900f-9b63-4d56-8310-a641d819342a does not have a summary. Skipping filtering.
+Node 174b0677-9b6f-4eb3-a77b-9aa3987418de does not have a summary. Skipping filtering.
+Node e7f70419-e4f7-47fa-ac1a-6800895fc1bc does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  28%|███████████▋                              | 128/462 [01:03<04:44,  1.18it/s]Node 7a06be82-39ad-4d8f-9d71-687174176988 does not have a summary. Skipping filtering.
+Node 21a6b981-91ed-4de2-a9d2-746c855609a1 does not have a summary. Skipping filtering.
+Node c3e460cf-8156-4c5e-8701-d106432ee221 does not have a summary. Skipping filtering.
+Node 92495357-21d1-4388-a650-46c24a59260d does not have a summary. Skipping filtering.
+Node 11a6a3e2-b94f-46ee-a47b-61cf5da347ae does not have a summary. Skipping filtering.
+Node 595be824-483f-4d73-8b32-b4151d26e831 does not have a summary. Skipping filtering.
+Node 36ca4076-78b0-4b71-bd24-b9d345ec3af8 does not have a summary. Skipping filtering.
+Node 286d98df-ba2c-468e-93c4-bacbc59f9cc5 does not have a summary. Skipping filtering.
+Node 083673be-6cd8-4b72-95b3-0f3a3b4a0531 does not have a summary. Skipping filtering.
+Node 6467bd79-f316-4190-a81c-de823aee0cf6 does not have a summary. Skipping filtering.
+Node e0dda783-f830-4ba5-9e80-a34d5af9ff85 does not have a summary. Skipping filtering.
+Node bab1e504-bcb2-43d6-8a9f-3c23b3eb4b83 does not have a summary. Skipping filtering.
+Node 6c7b8377-0d96-4974-82c5-de16a3eb350e does not have a summary. Skipping filtering.
+Node b8ec7107-78a6-49c5-a1e2-11b3e81eded3 does not have a summary. Skipping filtering.
+Node 5105c723-b519-462a-8839-27bfdfd0fd7c does not have a summary. Skipping filtering.
+Node 2e52f56f-7c06-47fe-befc-e650ba579a85 does not have a summary. Skipping filtering.
+Node 5ea0b8c2-9d41-4607-91cf-1ae5f2ff59d3 does not have a summary. Skipping filtering.
+Node 01ca7c61-9fc7-40c7-90a2-af8549e1fec1 does not have a summary. Skipping filtering.
+Node 48c07aa6-9844-4478-aded-e6de6437550e does not have a summary. Skipping filtering.
+Node b0985478-3959-464e-a854-867dcc999d49 does not have a summary. Skipping filtering.
+Node 9bbcd79c-ba6c-4fbb-8aad-6f3bae65cb51 does not have a summary. Skipping filtering.
+Node bd7dbfed-1b7f-4d94-9926-37238a5696a6 does not have a summary. Skipping filtering.
+Node 986ff69a-4699-4aad-9016-f9ad8cdf12a9 does not have a summary. Skipping filtering.
+Node 22e41b2b-d7e5-4a36-a86b-2836251916ab does not have a summary. Skipping filtering.
+Node 384c0a92-f032-49db-8ef2-148a9836cd9c does not have a summary. Skipping filtering.
+Node 7070b3e6-22fa-4d2d-909e-a2793fc5ebd3 does not have a summary. Skipping filtering.
+Node 782ecf57-d7b8-4ff9-9d8f-d6856d27608a does not have a summary. Skipping filtering.
+Node 67c3d583-b6c7-4a2a-a1c8-8ff42251072a does not have a summary. Skipping filtering.
+Node e09f01b5-f497-45de-a113-049811505364 does not have a summary. Skipping filtering.
+Node 8781701f-01f8-43e0-9ee8-1d9a7f767633 does not have a summary. Skipping filtering.
+Node a1a8eb86-cb88-4af3-bf28-9d5a06a171ac does not have a summary. Skipping filtering.
+Node 28df74a2-7327-4c97-a4f0-4ff044d49953 does not have a summary. Skipping filtering.
+Node 54f7d226-7095-4cf8-b327-f7a07af9d58e does not have a summary. Skipping filtering.
+Node 3834838b-5b8c-49a2-9abe-4dda53a36c85 does not have a summary. Skipping filtering.
+Node 9207c795-9c1c-484e-bef4-8d5d140b4852 does not have a summary. Skipping filtering.
+Node 41af59df-9e13-4c90-afef-29cea1923cd7 does not have a summary. Skipping filtering.
+Node 513d5921-3f52-4314-88a1-11567e8137b8 does not have a summary. Skipping filtering.
+Node 4f33043f-11ca-4467-bc9a-416d80d5233d does not have a summary. Skipping filtering.
+Node e5995595-d254-41ff-adee-ba2eb0c2d603 does not have a summary. Skipping filtering.
+Node c8d4149f-33e7-4220-9de1-5a9ba5717fba does not have a summary. Skipping filtering.
+Node b2358de2-33aa-4149-9de7-f87550c52f01 does not have a summary. Skipping filtering.
+Node f7b6dfec-7406-4eed-988b-a61ea12b2919 does not have a summary. Skipping filtering.
+Node 4790eb1c-53e9-4874-aa47-8fec0ad9dfcd does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  50%|█████████████████████                     | 232/462 [02:05<02:36,  1.47it/s]Node c17f282b-24d2-4b4f-bdd3-f112713dfc08 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  58%|████████████████████████▏                 | 266/462 [02:45<02:37,  1.25it/s]Node aa28bae1-29bb-4632-a687-950d889e1363 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  62%|█████████████████████████▉                | 285/462 [03:04<04:24,  1.49s/it]Node 1a33664e-8ead-40f1-8cee-f1d849162f78 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  66%|███████████████████████████▋              | 304/462 [03:10<02:15,  1.16it/s]Node 983becd9-d960-4bbf-b33a-73f0d2be8b1b does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  69%|█████████████████████████████             | 319/462 [03:28<02:09,  1.10it/s]Node a93b5e9f-afde-41cf-8e41-6360860a28b6 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  70%|█████████████████████████████▎            | 322/462 [03:30<01:59,  1.17it/s]Node de2a665a-7ec5-4786-b8fe-50ddafadfb65 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  74%|███████████████████████████████▏          | 343/462 [03:52<01:50,  1.08it/s]Node e58c165b-be67-4430-b32f-58966c074a4d does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  79%|█████████████████████████████████▎        | 366/462 [04:17<01:29,  1.07it/s]Node 79b37a12-68cf-40b2-b9e8-41ac0297f1de does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  83%|██████████████████████████████████▉       | 384/462 [04:36<01:09,  1.12it/s]Node dd452970-f2df-4f5f-81c4-7e4691185df1 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  86%|████████████████████████████████████▎     | 399/462 [04:53<00:56,  1.12it/s]Node cdb3b08c-c94c-41d8-95bb-e0f99fa61bcc does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  87%|████████████████████████████████████▍     | 401/462 [04:56<00:56,  1.08it/s]Node 50a40557-6703-4c2c-a242-4d2e393de934 does not have a summary. Skipping filtering.
+Node 9c2f5d9d-847d-4083-994b-905c7b8251ed does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  88%|████████████████████████████████████▉     | 406/462 [04:57<00:40,  1.38it/s]Node 762bbc14-5c01-473e-8b12-554503897caf does not have a summary. Skipping filtering.
+Node e7074e97-a9ac-46f9-b2ae-5d7533220d5f does not have a summary. Skipping filtering.
+Node cb14faa9-cf2c-4259-9ca5-30c401f83778 does not have a summary. Skipping filtering.
+Node f6367a74-9656-4d9f-9765-aa47b29743ca does not have a summary. Skipping filtering.
+Node b2dbe401-7da5-430e-be35-02d5ad3dd60c does not have a summary. Skipping filtering.
+Node e866c23f-bf42-4a3c-bbf8-2936807076af does not have a summary. Skipping filtering.
+Node 14d07c30-e865-4d89-a78f-97a6994411d8 does not have a summary. Skipping filtering.
+Node b8393a29-c06d-4823-a58a-beb8835d3ffe does not have a summary. Skipping filtering.
+Node 892203a6-64b9-4bff-b0bb-4f8f1228d287 does not have a summary. Skipping filtering.
+Node cdcdc3e1-a4ad-477c-add6-a9da01efb7ec does not have a summary. Skipping filtering.
+Node a8c22909-3776-4ce4-b57e-6ead28645d16 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter:  88%|█████████████████████████████████████     | 407/462 [05:14<01:58,  2.15s/it]Node 30b978a0-0bcd-4db8-afec-9209208743c0 does not have a summary. Skipping filtering.
+Node 79f2e035-19b0-4c0e-9bbf-88a5489c2d67 does not have a summary. Skipping filtering.
+Node 33788c7d-2497-4b9c-b1cd-39f3a9bc1d4d does not have a summary. Skipping filtering.
+Node 33d8b081-2d23-4371-b25e-9eccbccbbcae does not have a summary. Skipping filtering.
+Node abf21e8e-47fe-4e44-b7c1-5b27067ce1d4 does not have a summary. Skipping filtering.
+Node d0f4b88c-f48d-402e-83cf-e38885a1bec9 does not have a summary. Skipping filtering.
+Node a2f94f36-e9af-46ba-a7c1-edd5a57438d4 does not have a summary. Skipping filtering.
+Node fe7aecaf-d05a-44f2-b838-a511a75ea211 does not have a summary. Skipping filtering.
+Node 0326bffd-475e-4906-80d7-09edf83bb8d9 does not have a summary. Skipping filtering.
+Node 8e4f7f7f-f354-4803-8e0c-0aef912aa330 does not have a summary. Skipping filtering.
+Applying CustomNodeFilter: 100%|██████████████████████████████████████████| 462/462 [05:38<00:00,  1.37it/s]
+Applying EmbeddingExtractor: 100%|████████████████████████████████████████| 200/200 [01:57<00:00,  1.70it/s]
+Applying ThemesExtractor: 100%|███████████████████████████████████████████| 371/371 [07:20<00:00,  1.19s/it]
+Applying NERExtractor: 100%|██████████████████████████████████████████████| 371/371 [07:13<00:00,  1.17s/it] 
+Applying CosineSimilarityBuilder: 100%|███████████████████████████████████████| 1/1 [00:00<00:00, 35.52it/s]
+Applying OverlapScoreBuilder: 100%|███████████████████████████████████████████| 1/1 [00:01<00:00,  1.45s/it] 
+Generating personas: 100%|████████████████████████████████████████████████████| 3/3 [00:04<00:00,  1.56s/it]
+Generating Scenarios: 100%|███████████████████████████████████████████████████| 3/3 [00:43<00:00, 14.56s/it] 
+Generating Samples: 100%|███████████████████████████████████████████████████| 21/21 [00:25<00:00,  1.19s/it] 
+Ragas згенерував 21 рядків
+
+Увага: категорії {'failure_case', 'edge_case'} порожні. Перепризначаємо частину прикладів.
+  Перепризначено: 'Які основні теми обговорюються у статті доктора Техсина Зії …' → edge_case
+  Перепризначено: 'Kak Google PaLM model primenyalas dlya roboticheskogo upravl…' → failure_case
+
+Збережено 21 прикладів → tests\golden_dataset.json
+
+=== Golden Dataset — підсумок ===
+Всього прикладів: 21
+  happy_path: 19
+  edge_case: 1
+  failure_case: 1
+
+Перші 3 приклади (preview):
+
+  [happy_path]
+  Запит:     Хто такий Гаррісон Чейз і яку роль він відіграє у розвитку LangChain?
+  Відповідь: Гаррісон Чейз є розробником LangChain, програмного фреймворку для розробки застосунків на       
+
+  [happy_path]
+  Запит:     Яка роль LangChain у використанні великих мовних моделей у додатках, і які його основні ви      
+  Відповідь: LangChain є програмним фреймворком, який допомагає інтегрувати великі мовні моделі (LLMs)       
+
+  [happy_path]
+  Запит:     Кто такой Harrison Chase и что он сделал с LangChain, когда он начал и сколько денег они с      
+  Відповідь: Harrison Chase запустив LangChain в жовтні 2022 року як відкритий проект, працюючи в старт      
+
+⚠️  ОБОВ'ЯЗКОВО зробіть manual review файлу tests/golden_dataset.json:
+   - Перевірте що всі запитання й відповіді написані УКРАЇНСЬКОЮ
+   - Виправте або видаліть неякісні приклади
+   - Уточніть категорії (happy_path / edge_case / failure_case)
+   - Мета: 10–15 якісних прикладів після очищення

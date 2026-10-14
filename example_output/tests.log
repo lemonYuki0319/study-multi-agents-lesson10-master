@@ -1,0 +1,382 @@
+ D:\Sergey\AI\study-multi-agents\lesson10> deepeval test run tests/
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████████████| 201/201 [00:00<00:00, 9453.73it/s]
+XLMRobertaForSequenceClassification LOAD REPORT from: BAAI/bge-reranker-base
+Key                             | Status     |  | 
+--------------------------------+------------+--+-
+roberta.embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED    :can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+  📎 ResearchPlan(
+       goal='З’ясувати, хто такий Гаррісон Чейз і яку саме роль він відіграв у створенні, запуску та розвитку LangChain: як засновник, розробник, публічний представник і керівник компанії/екосистеми LangChain.',
+       search_queries=['Гаррісон Чейз LangChain хто такий', 'Harrison Chase LangChain founder biography', 'Harrison Chase role in LangChain development', 'LangChain launched in October 2022 by Harrison Chase', 'Harrison Chase Robust Intelligence LangChain', 'Harrison Chase CEO LangChain company funding', 'LangChain official about Harrison Chase', 'site:langchain.com Harrison Chase', 'site:github.com langchain-ai Harrison Chase', 'site:linkedin.com/in Harrison Chase LangChain'],
+       sources_to_check=['knowledge_base', 'web'],
+       output_format='Короткий аналітичний профіль українською: 1) хто такий Гаррісон Чейз; 2) його зв’язок із LangChain; 3) ключові етапи його внеску в розвиток LangChain (запуск open-source проєкту, заснування компанії, залучення фінансування, популяризація фреймворку); 4) 2–3 підтверджені факти з джерел із посиланнями. Почати з короткої відповіді в 2–3 реченнях, далі дати структурований список фактів.'
+     )
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=False,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=['Базовий факт про запуск LangChain Гаррісоном Чейзом у жовтні 2022 підтверджується локальним джерелом `langchain.pdf`.', 'Є логічна структура: хто це, зв’язок із LangChain, етапи внеску, підтверджені факти, висновок.', 'Коректно відображено еволюцію від open-source проєкту до компанії та продуктової екосистеми.'],
+       gaps=['Freshness: наведені факти не повністю актуалізовані станом на 2026-04-08. Локальне джерело містить новіші дані, ніж у тексті: зокрема згадує запуск LangGraph Platform у GA 14 травня 2025 та включення LangChain до Forbes AI 50 у квітні 2025, але це не інтегровано в висновки як частина актуального стану компанії.', "Freshness: твердження про 'понад $20 млн' є застарілим/неповним у контексті наявного новішого факту в локальному джерелі про $25M Series A у лютому 2024.", "Completeness: не розмежовано чітко, що підтверджено локальними/офіційними джерелами, а що є інтерпретацією. Наприклад, фраза про 'допоміг перетворити на компанію' правдоподібна, але потребує чіткішої опори на джерело.", 'Completeness: відсутня пряма ідентифікація його поточної ролі/посади в компанії або чесне застереження, що це не вдалося верифікувати на наданих джерелах. У тексті є натяк на керівну роль, але без достатньої перевірки.', "Completeness: блок '2–3 підтверджені факти' не містить коротких цитованих/жорстко верифікованих формулювань із позначенням, яке джерело підтверджує кожен факт."],
+       revision_requests=['Оновити матеріал з урахуванням новіших фактів із локальної бази: щонайменше додати, що в лютому 2024 було оголошено LangSmith і $25M Series A, а 14 травня 2025 LangGraph Platform вийшла в GA; за бажанням — згадати Forbes AI 50 (квітень 2025).', "Переформулювати фінансування хронологічно й точно: seed/раннє фінансування 2023, потім $25M Series A у 2024, без змішування старішого 'over $20M' як ніби це фінальна актуальна сума.", 'Чітко відділити перевірені факти від висновків/інтерпретацій. Для кожного ключового твердження вказати конкретне джерело.', 'Або підтвердити через надійне джерело його формальну посаду (наприклад, CEO/founder), або явно написати, що в наданих джерелах верифікується насамперед роль creator/founder of the open-source project.', "Посилити секцію 'підтверджені факти' короткими, строго верифікованими пунктами, готовими до вставки в звіт."]
+     ) 🔄
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=False,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=['Текст добре розділяє верифіковані факти та інтерпретації, що знижує ризик змішування фактів із висновками.', 'Ключова хронологія викладена логічно: запуск open-source проєкту, seed/раннє фінансування, Series A, продуктові GA-анонси.', 'Твердження про корпоративну посаду Harrison Chase сформульоване обережно й без надмірної впевненості, що є коректним за наявної доказової бази.', 'Локальна база знань підтверджує основні опорні пункти: жовтень 2022, фінансування 2023, LangSmith + Series A у 2024, LangGraph Platform GA у 2025, Forbes AI 50 у 2025.'],
+       gaps=['Freshness не доведена належно: зовнішня web_search-перевірка фактично не спрацювала, тому немає незалежного підтвердження, що станом на 2026-04-08 не з’явилися новіші або точніші офіційні дані.', 'Є залежність майже виключно від локальної бази та двох згаданих постів блогу; для Forbes AI 50 прямо вказано, що live-підтвердження не підтягнулося, тобто один із фактів лишається без незалежної актуальної верифікації.', 'Completeness неповна щодо фінансування: не перевірено, чи були після Series A у 2024 нові раунди, secondary, оцінка, великі партнерства або зміни корпоративного статусу до 2026-04-08.', "Не перевірено, чи були після GA LangGraph Platform додаткові суттєві віхи компанії, які могли б змінити рекомендовану 'оновлену формулу опису'.", "Структура добра, але секція 'Джерела' неповна як для верифікації: немає повних URL/бібліографічних реквізитів офіційних постів, а для Forbes AI 50 немає зовнішнього джерела взагалі."],
+       revision_requests=['Повторно перевірити freshness через web_search/read_url з працездатними запитами та офіційними джерелами: LangChain blog, langchain.com, Crunchbase/SEC/надійні профільні медіа, Forbes AI 50.', 'Надати незалежне live-підтвердження або зняти/переформулювати твердження про Forbes AI 50 2025, якщо офіційне чи авторитетне зовнішнє джерело не знаходиться.', 'Перевірити, чи були новіші корпоративні події після 2025-05-14 і до 2026-04-08: нові раунди фінансування, зміни керівництва, великі релізи, стратегічні партнерства.', 'Додати повні посилання на офіційні джерела та, за можливості, точні цитати/дати з них.', "Уточнити межі твердження про Harrison Chase: окремо позначити, що 'founder/creator of the open-source project' підтверджено, а корпоративний титул компанії або підтверджується окремим офіційним джерелом, або вилучається.", 'Оновити підсумкову формулу опису лише після live-перевірки, що вона не пропускає важливі події 2025–2026 років.']
+     ) 🔄
+
+  📎 ResearchPlan(
+       goal='Підготувати чітке, структуроване пояснення українською про роль LangChain у використанні великих мовних моделей у застосунках: що це таке, які ключові функції надає, яку роль відіграє в архітектурі LLM-аплікацій, і які основні сценарії використання є найважливішими на практиці.',   
+       search_queries=['LangChain role in LLM applications key features use cases', 'What is LangChain framework for LLM apps overview', 'LangChain components chains agents retrieval memory tools prompts', 'LangChain RAG chatbots summarization code analysis use cases', 'LangChain official documentation overview agents retrieval prompt templates', 'LangChain framework benefits for building LLM applications', 'LangChain vs direct LLM API why use LangChain', 'LangChain orchestration external data sources PDFs web CSV databases'],
+       sources_to_check=['knowledge_base', 'web'],
+       output_format='Фінальний звіт українською у 4 секціях: 1) Короткий огляд LangChain; 2) Ключові функції LangChain; 3) Роль LangChain у LLM-аплікаціях; 4) Основні use cases. Додати короткий висновок наприкінці. Формат — структуровані підзаголовки + марковані списки + 1 стислий підсумковий абзац без зайвих технічних деталей.'
+     )
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=False,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=['Текст логічно організований: є огляд, функції, роль у LLM-аплікаціях, use cases і висновок.', 'Базові твердження про LangChain загалом коректні й підтверджуються knowledge base: це фреймворк для інтеграції LLM у застосунки, а не сама модель.', 'Коректно згадані типові сценарії: chatbots, RAG, summarization, document/code analysis.', 'Є корисне розрізнення між LangChain як orchestration layer та власне LLM.', 'Правильно відображено екосистемні елементи LangSmith і LangGraph, причому knowledge base містить новіший факт про GA LangGraph Platform у травні 2025 року.'],  
+       gaps=['Freshness: дослідження майже повністю спирається на локальну knowledge base і прямо зазначає, що web_search не спрацював. Через це не перевірено, чи є новіші офіційні матеріали або зміни в позиціонуванні LangChain станом на 2025–2026.', 'Freshness: у knowledge base є факт, що 14 травня 2025 LangGraph Platform вийшов у general availability, але в тексті це подано узагальнено, без акценту на даті та статусі GA.', 'Completeness: не покрито важливий сучасний аспект розділення екосистеми на LangChain / LangGraph / LangSmith і коли що використовувати. З поточного тексту це згадано, але не пояснено достатньо чітко.', 'Completeness: бракує обмежень/застережень — коли LangChain може бути зайвим, які trade-offs (додаткова складність, абстракції, latency/debugging overhead).', 'Completeness: не висвітлено, що частина наведених інтеграцій у knowledge base походить зі стану на March 2023; це слід маркувати як історичний зріз, а не як безумовно актуальний перелік.', 'Structure: структура добра, але джерельна атрибуція місцями неточна/надмірно повторювана: багато тверджень посилаються на p. 0, хоча окремі факти мають різну часову прив’язку.', "Source hygiene: вказано 'web_search не повернув результатів', але не зроблено спроби компенсувати це уточненням про обмеження freshness і не проведено явного відділення стабільних фактів від потенційно застарілих."],
+       revision_requests=['Оновити розділ freshness: явно перевірити й відобразити найсвіжіші доступні факти станом на 2025–2026, зокрема про LangGraph Platform (GA 2025) і актуальне місце LangSmith у стеку.', "Додати окремий підрозділ 'Екосистема LangChain': коротко розмежувати LangChain, LangGraph і LangSmith та пояснити, у яких сценаріях який компонент доречний.", 'Позначити часові межі джерел: окремо відмітити, що частина переліку інтеграцій у knowledge base відображає стан на March 2023 і не повинна подаватися як гарантовано повний актуальний список.', "Додати розділ 'Коли LangChain не потрібен / trade-offs': для простих single-shot API-викликів, а також ризики надмірної абстракції, складності налагодження та latency.", 'Уточнити use cases, додавши synthetic data generation, якщо воно заявлене в джерелі, або свідомо пояснити, чому його опущено.', 'Покращити джерельну прив’язку: менше повторювати узагальнене посилання на p. 0 і точніше прив’язати конкретні твердження до конкретних фрагментів/дат.', 'Якщо web_search у середовищі й далі не працює, прямо зафіксувати це як обмеження в звіті та знизити силу тверджень про актуальний стан екосистеми, замість неявно подавати все як current state.']
+     ) 🔄
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=True,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=['Чітко позначені freshness-обмеження та часові межі джерел.', 'Коректно розведені ролі LangChain, LangGraph і LangSmith.', 'Ключові актуальні факти підтверджуються: GA LangGraph Platform 2025-05-14, перейменування на LangSmith Deployment станом на October 2025, changelog активний до March 2026.', 'Добра структура: від freshness і дефініцій до use cases, trade-offs і висновку.', 'Обережно й правильно інтерпретовано historical snapshot March 2023 як неактуальний каталог інтеграцій.'],
+       gaps=["Не все суттєве твердження верифіковане через джерела. З інструментів вдалося прямо підтвердити [4], [5] і локальні [6]-[8], але сторінки [1]-[3] через read_url не завантажилися. Тому твердження про 'LangChain overview docs' / 'LangGraph overview docs' / 'LangSmith docs' у поточній формі лишаються неперевіреними в цьому проході.", 'Completeness частково просідає через відсутність альтернативного зрізу екосистеми: не перевірено, чи не змінилося офіційне позиціонування LangChain у 2026 ще далі (наприклад, через нові overview/blog/changelog матеріали поза переліченими сторінками).', "Розділ про use cases залишається змішаним: частина сучасного переліку є аналітичною інтерпретацією, а не прямо підтвердженим списком з актуальних docs. Це нормально для summary, але треба чіткіше розділити 'explicitly documented' vs 'inferred practical use cases'.", 'Не перевірено, чи є новіші офіційні сторінки/документи щодо LangSmith Deployment після GA-анонсу, які краще за blog-пост описують актуальний deployment layer у 2026.', 'Відсутня незалежна перевірка того, чи synthetic data generation досі фігурує в актуальній документації/навігації, чи це вже суто historical use case.'],
+       revision_requests=['Або повторно верифікуй [1]-[3] через доступні інструменти/альтернативні URL, або явно познач у тексті, що ці сторінки не вдалося перечитати технічно в цьому проході, і тому посилання на них спираються на попередньо зчитаний/збережений контент, якщо це так.', 'Чіткіше розділи use cases на дві групи: (a) прямо підтверджені джерелами, (b) практичні висновки/інтерпретації на основі архітектури екосистеми.', "Додай короткий абзац 'Що саме підтверджено напряму в цьому аудиті', щоб не створювати враження, ніби всі пункти однаково жорстко верифіковані.", 'Спробуй знайти або додати ще одне актуальне джерело 2025–2026 про LangSmith Deployment / deployment layer, щоб зменшити залежність від одного GA blog-поста.', 'Якщо немає можливості отримати нові джерела, зменш категоричність формулювань у пп. 2–4 та 5.2, де зараз звучить ніби це напряму підтверджено актуальними docs.']
+     ) 🔄
+
+  📎 ResearchPlan(
+       goal='З’ясувати, хто такий Harrison Chase, яку роль він відіграв у створенні LangChain, коли LangChain стартував, і скільки фінансування проєкт/компанія залучили.',
+       search_queries=['Harrison Chase LangChain founder biography', 'Harrison Chase who is he LangChain CEO', 'LangChain launched October 2022 Harrison Chase', 'When did LangChain start initial release October 2022', 'LangChain incorporated April 2023 funding Sequoia Benchmark', 'LangChain seed funding $10 million Benchmark April 2023', 'LangChain raised over $20 million Sequoia April 2023', 'LangChain Series A $25 million February 2024', 'LangChain total funding raised as of 2024', 'Harrison Chase worked at Robust Intelligence before LangChain'],
+       sources_to_check=['knowledge_base', 'web'],
+       output_format="Короткий фактологічний звіт: 1) хто такий Harrison Chase; 2) що саме він зробив із LangChain (створив/запустив як open-source проєкт, роль у компанії); 3) коли LangChain почався; 4) скільки грошей залучили — окремо seed, ранні раунди, Series A і за можливості сумарно; 5) примітка про можливі розбіжності між 'проєктом' і 'компанією'. Додати посилання/джерела для кожного факту."
+     )
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=False,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=['Звіт коректно розрізняє open-source LangChain project і LangChain company, що є ключовим для інтерпретації дат і funding.', 'Основні базові факти підтверджені локальною базою знань: запуск у жовтні 2022, зв’язок із Robust Intelligence, seed від Benchmark, Series A у лютому 2024.', 'Структура логічна: окремо хто такий Harrison Chase, що він зробив, коли почався LangChain, funding і підсумок.', 'Обережне формулювання щодо CEO — краще, ніж бездоказове твердження.'],
+       gaps=['Freshness: звіт спирається майже виключно на `langchain.pdf`/Wikipedia і не відбиває новіші факти, доступні в тих самих джерелах, зокрема що 14 May 2025 компанія запустила LangGraph Platform у general availability, а в April 2025 була в Forbes AI 50. Якщо запит стосується поточного стану LangChain, це вже застаріле покриття.', 'Freshness: для funding використано дані лише до Feb 2024. Не перевірено, чи були новіші раунди, зміни оцінки або офіційні оновлення після цієї дати. Через web search були збої, але незалежна перевірка свіжості залишилась неповною.', 'Completeness: твердження про роль CEO лишилось неверифікованим, хоча для фактичного профілю Harrison Chase це важливий аспект. Потрібно або добути офіційне підтвердження, або явно винести це як open question з окремим статусом перевірки.', 'Completeness: не вистачає першоджерел вищої якості, ніж Wikipedia/локальний витяг. Наприклад, офіційний блог LangChain уже підтвердив Series A ($25M), але аналогічно варто було пошукати/додати офіційні джерела для seed та раннього Sequoia-раунду.', "Completeness: звіт каже 'короткий фактологічний звіт', але не дає чіткої таблиці 'факт → джерело → дата джерела → рівень надійності', що важливо для верифікації при змішаних джерелах.", "Structure: хоча загалом структура добра, у funding-блоці змішано 'seed', 'ранній раунд / funding', 'Series A' без чіткого статусу, чи $20M+ Sequoia — це окремий раунд від seed, чи пост-seed/інкорпораційне фінансування. Це може заплутати читача."],
+       revision_requests=['Оновити звіт з перевіркою freshness станом на 2026-04-08: окремо перевірити офіційні або надійні джерела після Feb 2024 щодо LangChain company, продуктів і funding.', 'Додати новіші підтверджені факти, уже видимі з наявної бази знань: LangGraph Platform GA (14 May 2025) і Forbes AI 50 (April 2025), або пояснити, чому вони не входять у scope.', "Перевірити й за можливості верифікувати статус Harrison Chase як CEO/co-founder/company role з офіційного джерела (сайт компанії, блог, пресреліз, профіль компанії). Якщо не вдасться — чітко позначити як 'непідтверджено першоджерелом'.", 'Для funding додати джерела вищої якості: офіційний блог LangChain для Series A вже доступний; аналогічно знайти офіційні/авторитетні джерела для Benchmark seed і Sequoia 2023 round.', 'Перебудувати funding-секцію у вигляді хронології з окремими полями: дата, тип раунду, сума, інвестор, джерело, примітка про можливе дублювання/перетин раундів.', "Додати коротку таблицю 'факт → джерело → дата джерела → примітка про надійність', щоб звіт був готовий до використання як верифікований reference note."]
+     ) 🔄
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=True,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=['Перевірено ключові офіційні першоджерела для 2024-02-15 (LangSmith GA + $25M Series A) і 2025-05-14 (LangGraph Platform GA); їхній текст незалежно підтверджується через read_url.', 'Дослідження коректно маркує рівень надійності й не видає неперевірені твердження за факти.', 'Структура логічна: milestones, роль Harrison Chase, funding chronology, таблиця надійності, підсумок.', 'Freshness загалом добра: включено події до 2025 року, а також враховано пізніший контекст про ребрендинг LangGraph Platform у LangSmith Deployment станом на October 2025.'],
+       gaps=["Completeness недостатня: запит про компанію LangChain охоплено лише частково. Є пропущений важливий офіційний аспект — поточне позиціонування компанії/продуктів на langchain.com: 'Observe, evaluate, and deploy agents with LangSmith' та роль open-source frameworks (LangGraph, LangChain, Deep Agents). Це вже доступно з офіційного сайту і варто інтегрувати як актуальний company snapshot.", "Роль Harrison Chase недоопрацьована: у тексті сказано, що не знайдено окремої офіційної сторінки з титулом, але не проведено достатньо глибоку верифікацію через додаткові офіційні корпоративні канали. Поточна версія зупиняється на 'не знайдено', а не на 'перевірено X/Y/Z і не підтверджено'.", 'Funding 2023 залишається неперевіреним першоджерелом. Це допустимо як обережне маркування, але для повноти бракує бодай одного авторитетного вторинного джерела або явного переліку спроб перевірки й їхнього результату.', 'Forbes AI 50 також лишився на рівні локальної бази знань. Якщо прямий Forbes URL не читається, варто або знайти інше авторитетне підтвердження, або винести це з основного body у clearly unverified appendix.', 'У звіті є дрібна прогалина freshness: офіційний сайт LangChain зараз просуває LangSmith як agent engineering platform, що частково оновлює framing компанії відносно старішого формулювання про LangChain як центр бренду.'],
+       revision_requests=["Додайте короткий розділ 'Current company snapshot (official site, as of 2026-04)' на основі langchain.com: що саме компанія зараз продає/позиціонує, які основні продукти й як це співвідноситься з open-source frameworks.", 'Посильте секцію про Harrison Chase: або знайдіть пряме офіційне corporate/press/bio підтвердження титулу, або явно задокументуйте, які офіційні канали були перевірені та що саме в них не знайдено.', "Для funding 2023 спробуйте додати хоча б одне авторитетне вторинне джерело (наприклад, великий діловий/тех медіа архів, база компаній, інвесторський сайт). Якщо це неможливо, перенесіть ці пункти в окремий блок 'reported but not independently verified'.", 'Forbes AI 50 або незалежно підтвердьте, або понизьте пріоритет цього факту: не тримайте його в одному ряду з офіційно підтвердженими milestones.', "У фінальній версії розділіть факти на 2 шари: 'Verified by primary sources' і 'Reported by secondary/local sources only'. Це зробить звіт готовішим до due diligence використання."] 
+     ) 🔄
+
+E2E Happy Path Results (3 прикладів):
+  Correctness:      avg=0.56, min=0.52, max=0.62
+  Answer Relevancy: avg=0.54, min=0.24, max=0.70
+  Passed: 0/3
+                                                                                                                                                    
+  📎 ResearchPlan(
+       goal='З’ясувати, хто такий Гаррісон Чейз і яку саме роль він відіграє у створенні, запуску та розвитку LangChain, включно з його внеском як засновника, розробника та лідера компанії/екосистеми.',
+       search_queries=['Гаррісон Чейз LangChain хто такий', 'Harrison Chase LangChain founder role', 'Harrison Chase biography LangChain', 'Harrison Chase launched LangChain October 2022', 'Harrison Chase Robust Intelligence LangChain', 'LangChain developer Harrison Chase official', 'Harrison Chase CEO LangChain company', 'історія створення LangChain Гаррісон Чейз', 'Harrison Chase interview LangChain origin', 'LangChain company funding Harrison Chase Sequoia Benchmark'],
+       sources_to_check=['knowledge_base', 'web'],
+       output_format='Короткий довідковий звіт українською: 1) хто такий Гаррісон Чейз; 2) його зв’язок із LangChain; 3) ключові факти про запуск проєкту та розвиток компанії; 4) 2–3 речення про його вплив на екосистему LLM-інструментів; 5) наприкінці — список джерел.'
+     )
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=False,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=['Звіт правильно ідентифікує Гаррісона Чейза як засновника/первинного розробника LangChain.', 'Ключова хронологія 2022–2024 загалом узгоджується з локальною базою знань: запуск у жовтні 2022, інкорпорація у квітні 2023, LangSmith і Series A у лютому 2024.', 'Структура логічна: окремо подано хто це, зв’язок із LangChain, хронологію та вплив.', 'Є посилання на джерела з локальної бази знань, а твердження переважно прив’язані до них.'],
+       gaps=['Freshness: звіт не є актуалізованим відносно 2026-04-08. У локальній базі є новіші факти, яких не включено: запуск LangGraph Platform у general availability 14 травня 2025 та згадка LangChain у Forbes AI 50 у квітні 2025.', 'Freshness: у звіті сказано, що web-пошук не повернув результатів, але це не компенсовано перевіркою на наявність новіших даних у knowledge base; отже висновок зупинився на 2024, хоча доступні дані сягають 2025.', "Completeness: запит про 'хто такий Гаррісон Чейз' покрито лише через зв’язок із LangChain; майже немає незалежних біографічних деталей поза цим контекстом.", "Completeness: твердження про 'вплив на екосистему LLM-інструментів' є оціночними й не підкріплені окремими джерелами чи прикладами adoption/ринкового впливу.", "Completeness: фраза про 'понад $20 млн ... зокрема від Sequoia Capital' сформульована нечітко щодо раундів; з джерела видно seed від Benchmark і окремо понад $20 млн при valuation від Sequoia, це варто чіткіше розвести по подіях.", 'Structure: структура добра, але секція про розвиток продуктів обривається на 2024 і не доведена до останніх наявних подій 2025, тому як готовий довідковий звіт виглядає неповною по часовій лінії.'],
+       revision_requests=['Оновити звіт щонайменше до останніх доступних даних у knowledge base: додати 14.05.2025 general availability для LangGraph Platform і квітень 2025 Forbes AI 50.', 'Переписати примітку про freshness: чесно вказати, що web search не дав результатів, але knowledge base містить новіші факти до 2025 року.', 'Додати 2–4 незалежні біографічні деталі про Harrison Chase, якщо вони доступні через knowledge/web search; якщо недоступні, явно зазначити межі підтверджуваних фактів.', 'Уточнити фінансову хронологію 2023–2024, чітко розділивши seed від Benchmark, фінансування/оцінку за участі Sequoia та Series A 2024.', 'Підкріпити або пом’якшити оціночні твердження про вплив на екосистему: або дати джерело/приклади, або сформулювати як обережний висновок.', "Додати короткий блок 'станом на 2025/2026' з актуальним статусом LangChain як компанії та екосистеми, якщо це підтверджується наявними джерелами."]
+     ) 🔄
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=False,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=['Звіт загалом логічно організований: окремо подані біографія, хронологія, фінансування, вплив і поточний стан.', 'Ключові твердження з knowledge base коректно обережні там, де бракує підтверджень, особливо щодо особистої біографії Harrison Chase.', 'Основні віхи з KB підтверджуються: запуск LangChain у жовтні 2022, робота Chase у Robust Intelligence, фінансування 2023, LangSmith/Series A у 2024, Forbes AI 50 та LangGraph Platform GA у 2025.', 'Добре відокремлено seed / подальше фінансування 2023 / Series A 2024, що зменшує ризик змішування раундів.'],
+       gaps=["Freshness не задоволена: твердження 'web search не дав результатів' уже не можна вважати достатньою перевіркою. У цій верифікації web_search знову був нестабільний, але пряме читання актуального сайту langchain.com показує суттєвий зсув позиціонування компанії: головний продукт тепер комунікується як LangSmith agent engineering platform, із SDK для Python/TypeScript/Go/Java та підтримкою A2A/MCP. Це важливий контекст, відсутній у звіті.", "Звіт каже, що про 2026 'нових фактів ... немає', але це не перевірено достатньо на актуальних зовнішніх джерелах. Через збої web_search цей висновок слід формулювати як обмеження пошуку, а не як факт.", "Completeness не повна: запит був про 'Harrison Chase / LangChain / LangGraph', але звіт майже не пояснює, що таке LangGraph концептуально та як він співвідноситься з LangChain. Актуальна документація прямо каже, що агенти LangChain built on top of LangGraph.", 'Не вистачає чіткої продуктово-архітектурної рамки: LangChain framework vs LangGraph runtime/orchestration layer vs LangSmith observability/evaluation/deployment. Натомість є лише короткий список продуктів.', 'Твердження про use cases частково спираються на старі або архівні описи; варто оновити їх сучасною документацією, де акцент зміщено на agents, durable execution, human-in-the-loop, persistence, tracing.', 'Біографічний розділ можна посилити зовнішніми джерелами про Harrison Chase (наприклад, офіційні профілі/інтерв’ю), бо зараз він майже повністю залежить від одного локального документа.'],
+       revision_requests=['Переперевірити freshness через зовнішні джерела поза KB: офіційний сайт LangChain, блог, docs, профілі компанії/засновника. Якщо web_search нестабільний, явно зазначити це як обмеження і не робити сильних висновків про відсутність новин у 2026.', "Оновити розділ 'Станом на 2025/2026' з урахуванням актуального позиціонування: LangSmith як agent engineering platform; згадати сучасні capability signals з офіційного сайту (SDKs, tracing, evals, deployment/server, A2A & MCP).", "Додати окремий підрозділ 'Що таке LangGraph і як він пов’язаний із LangChain', включно з тим, що LangChain agents built on top of LangGraph та що LangGraph покриває durable/stateful execution, human-in-the-loop, persistence.", 'Уточнити, що твердження про use cases й роль в екосистемі мають дві часові площини: ранній період (RAG/chatbots/integrations) і поточний період (agent engineering / orchestration / deployment).', 'По можливості додати 1–2 незалежні зовнішні джерела про Harrison Chase, щоб не обмежуватися лише KB/внутрішнім PDF.', "Зберегти поточну структуру, але зробити фінальний варіант більш 'report-ready': на початку короткий executive summary, далі separate sections for Person / Company timeline / Product architecture / Funding / Current status / Source limitations."]
+     ) 🔄
+                                                                                                                                                    
+  📎 ResearchPlan(
+       goal='Підготувати українською пояснення того, як Google застосовувала PaLM та споріднені моделі для роботичного керування в контексті мультимодального аналізу: розкрити еволюцію від мовного планування до embodied/multimodal control, пояснити роль PaLM-E, RT-1, RT-2, SayCan, типи вхідних модальностей (текст, зображення, сенсори/пропріоцепція), архітектурні ідеї, практичні сценарії керування, обмеження та значення для галузі, а також чітко відокремити де саме використовується PaLM, а де більш релевантні robotics transformer-підходи Google.',
+       search_queries=['Google PaLM robotics multimodal control PaLM-E RT-1 RT-2 SayCan overview', 'PaLM-E An Embodied Multimodal Language Model Google robotics architecture proprioception vision language', 'RT-1 Robotics Transformer robot manipulation Google Everyday Robots vision language action tokens', 'RT-2 Vision-Language-Action model PaLM Google DeepMind robotic control web summary', 'SayCan PaLM robot affordances Google execution planning language model skill selection', 'Google robotics transformer RT-1 RT-2 PaLM relation difference embodied multimodal', 'PaLM-E sensor inputs proprioception state tokens robot control multimodal analysis', 'Google Research blog PaLM-E robot embodied multimodal language model', 'Google DeepMind RT-2 PaLM VLA robot chain of thought action generation', 'SayCan Google Blog grounded language robot affordance value function PaLM', 'PaLM-E ICML 2023 embodied multimodal language model pdf', 'RT-1 Robotics Transformer paper arXiv Google pdf', 'RT-2 paper vision-language-action model transfer web knowledge to robotic control pdf', 'Everyday Robots Google RT-1 RT-2 manipulation demonstrations dataset', 'PaLM robot control limitations latency safety hallucination embodiment multimodal', 'Google robot language models multimodal significance for robotics industry'],
+       sources_to_check=['knowledge_base', 'web'],
+       output_format='Фінальний звіт українською у структурі: 1) коротка теза-відповідь; 2) хронологія/еволюція підходів Google; 3) окремі підрозділи для SayCan, RT-1, PaLM-E, RT-2 із зазначенням що це за модель, які модальності використовує, як пов’язана з PaLM, як працює в роботичному керуванні, приклади задач; 4) архітектурна ідея мультимодального керування (перетворення зорових/сенсорних сигналів у токени/репрезентації, поєднання з мовою, планування vs низькорівневі дії); 5) типові сценарії застосування роботів; 6) обмеження й ризики; 7) значення для галузі; 8) коротка порівняльна таблиця моделей (Model / Inputs / Outputs / Role in control / Relation to PaLM). Обов’язково вказати, де PaLM використовується напряму, а де лише концептуально або як backbone.'
+     )
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=False,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=['Текст добре структурований: є теза, хронологія, окремі підрозділи по моделях, порівняльна таблиця та висновок.', 'Ключове розведення ролей між SayCan, RT-1, PaLM-E та RT-2 загалом коректне: SayCan як high-level skill selection, RT-1 як robotics policy, PaLM-E як embodied multimodal LM, RT-2 як VLA/action-token model.', 'Коректно підкреслено важливу ідею Google-лінійки: від мовного планування до tokenized action generation.', 'Обмеження та ризики описані доречно й узгоджуються з загальними відомими проблемами embodied/robotic foundation models.', 'Локальна база знань частково підтверджує принаймні одну важливу тезу: PaLM було розширено до мультимодальної моделі для роботичного керування (large-language-model.pdf, с. 9; бібліографія на с. 29).'],
+       gaps=['Freshness не підтверджено належно. У самому дослідженні прямо зазначено, що web_search не спрацював, а отже не було незалежної перевірки на наявність новіших або офіційних джерел станом на 2026-04-08.', 'Джерельна база недостатньо верифікована: використано переважно локальний secondary-source PDF плюс згадки канонічних робіт без цитат із офіційних сторінок/статей Google Research або Google DeepMind.', "Є неповнота в покритті 'споріднених підходів': не розглянуто, чи слід включати RT-X / Open X-Embodiment, AutoRT, Gemini Robotics / Gemini Robotics-ER як новіші кроки тієї ж еволюційної лінії Google/DeepMind після 2023 року.", "Теза про RT-2 сформульована обережно, але без перевірки варіантів backbone. Для строгості варто верифікувати, що RT-2 описувався як VLA на базі VLM-сімейства, а не просто 'концептуально споріднений із PaLM'.", "PaLM-E описано як таку, що 'може підтримувати керування або генерацію команд для виконавчих модулів', але це твердження потребує точнішого розмежування між reasoning/planning і безпосередньою action-policy роллю в оригінальній роботі.", 'Не вистачає явної перевірки публікаційних деталей: точні роки/версії для RT-1 (2022 arXiv, пізніша публікаційна версія), SayCan, PaLM-E, RT-2.', 'Структура добра, але для звіту бракує посилань на кожне сильне твердження всередині розділів; зараз джерела наведені в кінці досить загально.'],
+       revision_requests=['Повторно перевірити тему через web_search / офіційні вебджерела і додати принаймні по одному зовнішньому підтвердженню для SayCan, RT-1, PaLM-E, RT-2 (офіційні сторінки Google Research / Google DeepMind, arXiv, ICML тощо).', 'Оновити дослідження на freshness станом на 2026-04-08: коротко перевірити, чи після RT-2/PaLM-E Google/DeepMind випустили новіші embodied/VLA/robotics системи, релевантні до запиту, і або включити їх, або явно пояснити, чому вони поза scope.', 'Уточнити роль RT-2 щодо PaLM/VLM-backbone на підставі первинного джерела, а не лише концептуального опису.', 'Уточнити формулювання про PaLM-E: що саме вона робить у роботичному контурі (reasoning/planning/conditioning), і чи позиціонується як прямий controller чи радше embodied multimodal LM, що може бути частиною control stack.', 'Додати точні бібліографічні реквізити й роки для всіх чотирьох робіт, бажано з позначенням arXiv/конференційної версії.', "Підсилити completeness окремим абзацом 'Що сталося після RT-2 / PaLM-E' з коротким оглядом релевантних наступних кроків Google/DeepMind у robotics/VLA.", 'Зробити більш evidence-linked версію: вбудувати посилання/виноски безпосередньо після ключових тверджень у кожному розділі.']
+     ) 🔄
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=False,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=['Текст добре структурований: є короткий висновок, окремі секції по системах, порівняльна таблиця й підсумкова теза.', 'Є коректне ключове розрізнення між SayCan як skill-selection/planning, RT-1 як direct policy, PaLM-E як embodied multimodal reasoning model, і RT-2 як VLA.', 'PaLM-E частково незалежно верифікований через knowledge_search: ICML 2023, vol. 202, pp. 8469–8488 підтверджено локально.', 'Автор чесно маркує межі впевненості й не маскує відсутність live web verification.', 'Матеріал уже близький до формату звіту: логіка викладу послідовна, термінологія переважно узгоджена.'],
+       gaps=['Freshness не доведено: твердження про RT-X / Open X-Embodiment, AutoRT, Gemini Robotics / Gemini Robotics-ER подані без інструментально підтверджених джерел станом на 2026-04-08.', 'Є фактична прогалина у верифікації основних первинних джерел для SayCan, RT-1, RT-2: у цій сесії вони не були підтверджені knowledge_search або read_url, а web_search не спрацював.', "Completeness неповна щодо запиту на 'що було далі': новіші системи лише згадані, але не описані на рівні ролі, року, точного внеску, і зв'язку з попередньою лінією.", "Не вистачає явного розмежування 'локально підтверджено' vs 'загальновідомо, але не перевірено інструментом' у самій таблиці/висновках, а не лише в примітках.", 'Бібліографія неповна як для evidence-linked огляду: немає точних URL/DOI/arXiv IDs для більшості робіт, хоча текст претендує на верифікованість.', "Є дрібний сигнал неточності в локальному записі PaLM-E: список авторів у [P2-local] починається з 'Brian; Wahid, Ayzaan...' замість стандартного 'Driess et al.', що варто або пояснити як артефакт БЗ, або не використовувати як є."],
+       revision_requests=['Підтвердити принаймні базові бібліографічні дані SayCan, RT-1, PaLM-E, RT-2 через інструменти: бажано exact title, authors, year, venue/arXiv ID, official page URL.', 'Оновити freshness-розділ реальними перевіреними джерелами для RT-X / Open X-Embodiment, AutoRT, Gemini Robotics / Gemini Robotics-ER; якщо інструменти недоступні, знизити силу тверджень і явно винести це як неперевірений appendix.', 'Для кожної новішої системи після RT-2 додати мінімум: рік, 1-реченнєвий внесок, як саме вона продовжує або відхиляється від лінії SayCan→RT-1→PaLM-E→RT-2.', "Додати окрему колонку/позначку 'verification status' у таблицю або виноски: 'knowledge-confirmed', 'web-confirmed', 'not tool-verified in this session'.", 'Уніфікувати бібліографію: подати повні посилання в одному стилі, з arXiv/DOI/офіційними сторінками, замість лише текстових згадок.', 'Прибрати або пояснити артефактний локальний бібліографічний запис PaLM-E, щоб не створювати сумніву в авторстві.']
+     ) 🔄
+
+  📎 ResearchPlan(
+       goal='Декомпозувати задачу користувача за патерном Plan → Research → Critique для сценарію, де потрібно просто зберегти готовий наданий вміст у файл test_report.md, навіть якщо реальне дослідження не потрібне.',
+       search_queries=['Plan → Research → Critique decomposition for simple file-saving task', 'task decomposition save provided content to markdown file test_report.md', 'how to adapt research workflow when no research is required', 'markdown file saving task structured as Plan Research Critique', 'minimal research phase for deterministic content-write task', 'accept provided report content and save to test_report.md workflow', 'quality checks before saving markdown report to file', 'critique checklist for saving provided content into markdown file'],
+       sources_to_check=['knowledge_base', 'web'],
+       output_format='Короткий структурований план у 3 секціях: 1) Plan — уточнити вхідні дані (готовий вміст, назва файлу, формат Markdown, кодування, шлях збереження), визначити кроки запису файлу; 2) Research — явно зафіксувати, що зовнішнє дослідження не потрібне, але перевірити лише технічні припущення/обмеження (чи дано повний вміст, чи потрібно створити новий файл, чи дозволене перезаписування); 3) Critique — перевірити повноту вмісту, коректність назви test_report.md, відповідність Markdown, відсутність втрати форматування, ризики перезапису, та критерії готовності. Фінальний звіт бажано подати як actionable checklist або покроковий execution plan.'
+     )
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=False,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=['Логіка висновку загалом адекватна для суто технічної задачі: справді не потрібно предметне доменне дослідження.', 'Структура зрозуміла: є секції про потребу в дослідженні, технічну повноту, ризики та висновок.', "Коректно виділені базові припущення: overwrite, шлях збереження, UTF-8, збереження 'as is'."],
+       gaps=["Freshness не верифіковано інструментально: хоча веб-пошук тут майже не потрібен, у findings заявлено, що 'веб-пошук не дав корисних результатів', але фактичних перевірених джерел або результатів не наведено.", "Completeness недостатня відносно самої задачі виконання: не перевірено ключову передумову — чи markdown-вміст справді був наданий повністю в попередньому повідомленні. Без цього не можна стверджувати, що задача 'достатньо визначена для виконання'.", "Не враховано, що для збереження файлу потрібен доступ до файлової системи / відповідний інструмент. У findings сказано 'можна переходити ... до save_report', але не перевірено, чи такий інструмент/крок взагалі доступний у поточному середовищі.", "Твердження про 'локальний пошук у базі знань' слабко обґрунтоване: knowledge_search не дав релевантних інструкцій, але це радше означає відсутність релевантних документів у KB, а не підтвердження повноти рішення.", "Не зафіксовано, що шлях 'поточне/дефолтне робоче розташування' є лише припущенням і може бути некоректним без явної вказівки користувача або системного контексту."],
+       revision_requests=["Прибрати або пом'якшити неперевірене твердження, що задача вже достатньо визначена для виконання, доки не підтверджено наявність повного markdown-вмісту в контексті.", 'Явно зазначити операційні передумови: потрібен інструмент/доступ для запису файлу, інакше виконання неможливе навіть якщо аналіз правильний.', 'Уточнити, що висновок стосується лише аналізу задачі, а не фактичного збереження файлу; додати, що без перевірки наявності вмісту та політики overwrite потрібне уточнення.', 'Або надати фактичний результат web_search/read_url, або прибрати згадку про веб-пошук як виконану перевірку; для цієї задачі достатньо прямо сказати, що зовнішні джерела не є необхідними.', "Додати короткий блок 'Що ще потрібно для виконання': сам markdown-вміст, цільовий шлях (або підтвердження current directory), і політика перезапису існуючого файлу."]
+     ) 🔄
+
+  📎 CritiqueResult(
+       verdict='REVISE',
+       is_fresh=False,
+       is_complete=False,
+       is_well_structured=True,
+       strengths=["Логіка висновку загалом послідовна: відмежовано 'готовність до save_report' від факту фізичного запису файлу.", 'Коректно помічено, що в наведеному фрагменті є назва файлу `test_report.md`, але немає повного markdown-вмісту.', 'Структура з підзаголовками й списками придатна як основа короткого звіту.'],
+       gaps=['Не виконано незалежної верифікації через інструменти, хоча це обов’язкова вимога. Зокрема, не перевірено knowledge base на наявність повного markdown-вмісту або додаткового контексту запиту.', "Висновок про відсутність 'інструмента запису файлу' не підтверджений інструментально. У поточному наборі доступних інструментів справді немає file-write tool, але дослідження не показує цієї перевірки явно.", 'Freshness формально не перевірено. Для цього кейсу часовий фактор менш критичний, але за інструкцією треба перевірити актуальність відносно 2026-04-08; цього не зроблено.', 'Completeness недостатня: не перевірено, чи є в локальній базі знань або в ширшому контексті згадка про формат/контракт `save_report`, вимоги до шляху, overwrite-поведінку або сам markdown-вміст.', "Формулювання 'не можна впевнено' занадто загальне без чіткої матриці умов: що саме блокує аналітичний перехід до кроку, а що блокує лише фактичне виконання."],
+       revision_requests=['Перевірити через `knowledge_search`, чи існує в наданих документах/контексті повний markdown-вміст для `test_report.md` або специфікація `save_report`.', 'Явно зафіксувати інструментальну перевірку середовища: які саме інструменти доступні, і чи є серед них можливість запису файлу.', "Уточнити висновок у двох площинах: (a) чи достатньо даних для рекомендації 'можна переходити до save_report', (b) чи можливе фактичне виконання save_report в цьому середовищі.", 'Якщо в knowledge base є контракт `save_report`, додати конкретні передумови: required args, формат вмісту, шлях, overwrite semantics.', "Додати короткий evidence-based блок 'що перевірено / чого не знайдено', щоб висновок був не лише логічним, а й верифікованим."]
+     ) 🔄
+.Running teardown with pytest sessionfinish...
+
+==================================================================== FAILURES ===================================================================== 
+______________________________________________________________ test_critique_revise _______________________________________________________________ 
+
+    @pytest.mark.deepeval
+    def test_critique_revise():
+        """
+        Happy path: для неповного та поверхневого дослідження
+        Critic має видати verdict='REVISE' і надати конкретні revision_requests.
+        """
+        output = run_critic(POOR_FINDINGS)
+
+        test_case = LLMTestCase(input=POOR_FINDINGS, actual_output=output)
+        critique_quality.measure(test_case)
+>       assert critique_quality.score >= critique_quality.threshold, (
+            f"Critique Quality {critique_quality.score:.2f} < threshold {critique_quality.threshold}. "
+            f"Reason: {critique_quality.reason}"
+        )
+E       AssertionError: Critique Quality 0.69 < threshold 0.7. Reason: The critique identifies specific gaps in freshness, completeness, and structure, which aligns with the evaluation steps. It provides actionable revision requests that the researcher can follow to improve the work. However, the verdict of 'REVISE' is appropriate, as there are significant shortcomings in all three dimensions assessed, indicating that while the critique is thorough, it could have been more concise in its identification of issues.
+E       assert 0.6914273311479203 >= 0.7
+E        +  where 0.6914273311479203 = critique_quality.score
+E        +  and   0.7 = critique_quality.threshold
+
+tests\test_critic.py:144: AssertionError
+_______________________________________________________________ test_e2e_happy_path _______________________________________________________________ 
+
+golden_dataset = [{'category': 'happy_path', 'expected_output': 'Гаррісон Чейз є розробником LangChain, програмного фреймворку для розр...датками через єдиний API.", 'input': 'Яке визначення InfoWorld надає LangChain у контексті програмної розробки?'}, ...]
+
+    @pytest.mark.deepeval
+    def test_e2e_happy_path(golden_dataset):
+        """
+        E2E evaluation на happy_path прикладах із golden dataset.
+        Перевіряємо Correctness та Answer Relevancy.
+        Прохідний критерій: ≥60% тест-кейсів проходять обидві метрики.
+        """
+        happy_examples = [ex for ex in golden_dataset if ex["category"] == "happy_path"]
+        if not happy_examples:
+            pytest.skip("Немає happy_path прикладів у golden dataset")
+
+        # Обмежуємо до 3 прикладів для контролю витрат
+        sample = happy_examples[:3]
+
+        results = []
+        for example in sample:
+            actual = run_full_pipeline(example["input"])
+            tc = LLMTestCase(
+                input=example["input"],
+                actual_output=actual,
+                expected_output=example["expected_output"],
+            )
+            correctness.measure(tc)
+            answer_relevancy.measure(tc)
+            results.append({
+                "input": example["input"][:60],
+                "correctness": correctness.score,
+                "relevancy": answer_relevancy.score,
+                "passed": (
+                    correctness.score >= correctness.threshold
+                    and answer_relevancy.score >= answer_relevancy.threshold
+                ),
+            })
+
+        # Підсумок
+        passing = sum(1 for r in results if r["passed"])
+        avg_c = sum(r["correctness"] for r in results) / len(results)
+        avg_r = sum(r["relevancy"] for r in results) / len(results)
+
+        print(f"\nE2E Happy Path Results ({len(results)} прикладів):")
+        print(f"  Correctness:      avg={avg_c:.2f}, min={min(r['correctness'] for r in results):.2f}, "
+              f"max={max(r['correctness'] for r in results):.2f}")
+        print(f"  Answer Relevancy: avg={avg_r:.2f}, min={min(r['relevancy'] for r in results):.2f}, "
+              f"max={max(r['relevancy'] for r in results):.2f}")
+        print(f"  Passed: {passing}/{len(results)}")
+
+>       assert passing / len(results) >= 0.6, (
+            f"Лише {passing}/{len(results)} happy_path прикладів пройшли обидві метрики. "
+            f"Avg Correctness={avg_c:.2f}, Avg Relevancy={avg_r:.2f}"
+        )
+E       AssertionError: Лише 0/3 happy_path прикладів пройшли обидві метрики. Avg Correctness=0.56, Avg Relevancy=0.54
+E       assert (0 / 3) >= 0.6
+E        +  where 3 = len([{'correctness': 0.5186409069711017, 'input': 'Хто такий Гаррісон Чейз і яку роль він відіграє у розвитку L', 'passed'...599400971, 'input': 'Кто такой Harrison Chase и что он сделал с LangChain, когда ', 'passed': False, 'relevancy': 0.7}])
+
+tests\test_e2e.py:155: AssertionError
+---------------------------------------------------------------- Captured log call ---------------------------------------------------------------- 
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 403 for URL https://docs.langchain.com/oss/python/langchain/overview
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: docs.langchain.com. Connection pool size: 1   
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 403 for URL https://docs.langchain.com/langsmith/home
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: docs.langchain.com. Connection pool size: 1   
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 403 for URL https://docs.langchain.com/oss/python/langgraph/overview
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 403 for URL https://www.crunchbase.com/organization/langchain
+ERROR    trafilatura.downloads:downloads.py:236 download error: https://blog.langchain.dev/announcing-series-a/ HTTPSConnectionPool(host='blog.langchain.com', port=443): Max retries exceeded with url: https://blog.langchain.com/announcing-series-a (Caused by ResponseError('too many redirects')) 
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 404 for URL https://www.benchmark.com/blog/langchain
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 404 for URL https://www.sequoiacap.com/article/langchain-spotlight/
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 404 for URL https://techcrunch.com/2023/04/21/langchain-a-startup-working-to-make-it-easier-to-build-apps-with-language-models-raises-over-20m-from-sequoia/
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 403 for URL https://www.crunchbase.com/organization/langchain
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 999 for URL https://www.linkedin.com/in/hwchase17/
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 403 for URL https://www.forbes.com/lists/ai50/
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: blog.langchain.com. Connection pool size: 1   
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 403 for URL https://www.crunchbase.com/organization/langchain
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 403 for URL https://www.forbes.com/lists/ai50/
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: blog.langchain.com. Connection pool size: 1   
+___________________________________________________________ test_e2e_citation_presence ____________________________________________________________ 
+
+golden_dataset = [{'category': 'happy_path', 'expected_output': 'Гаррісон Чейз є розробником LangChain, програмного фреймворку для розр...датками через єдиний API.", 'input': 'Яке визначення InfoWorld надає LangChain у контексті програмної розробки?'}, ...]
+
+    @pytest.mark.deepeval
+    def test_e2e_citation_presence(golden_dataset):
+        """
+        Custom метрика: перевіряємо, що у фінальних звітах присутні
+        посилання на джерела — обов'язкова бізнес-вимога.
+        """
+        happy_examples = [ex for ex in golden_dataset if ex["category"] == "happy_path"]
+        if not happy_examples:
+            pytest.skip("Немає happy_path прикладів у golden dataset")
+
+        example = happy_examples[0]
+        actual = run_full_pipeline(example["input"])
+
+        tc = LLMTestCase(
+            input=example["input"],
+            actual_output=actual,
+            expected_output=example["expected_output"],
+        )
+        citation_presence.measure(tc)
+>       assert citation_presence.score >= citation_presence.threshold, (
+            f"Citation Presence {citation_presence.score:.2f} < threshold {citation_presence.threshold}. "
+            f"Reason: {citation_presence.reason}"
+        )
+E       AssertionError: Citation Presence 0.03 < threshold 0.5. Reason: The actual output does not contain any explicit references to sources such as file names, URLs, or authors. While it mentions the knowledge base and external web search, these are not concrete citations. Therefore, the score reflects the absence of any direct references.
+E       assert 0.03 >= 0.5
+E        +  where 0.03 = citation_presence.score
+E        +  and   0.5 = citation_presence.threshold
+
+tests\test_e2e.py:180: AssertionError
+---------------------------------------------------------------- Captured log call ---------------------------------------------------------------- 
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 403 for URL https://www.forbes.com/lists/ai50/
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: python.langchain.com. Connection pool size: 1 
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 403 for URL https://blog.langchain.dev/langgraph-platform-is-now-generally-available-deploy-manage-long-running-stateful-agents/
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: blog.langchain.dev. Connection pool size: 1   
+ERROR    trafilatura.downloads:downloads.py:245 not a 200 response: 403 for URL https://blog.langchain.dev/announcing-the-general-availability-of-langsmith-and-our-series-a-led-by-sequoia-capital/
+WARNING  urllib3.connectionpool:connectionpool.py:327 Connection pool is full, discarding connection: docs.langchain.com. Connection pool size: 1   
+_________________________________________________________ test_e2e_failure_case_handling __________________________________________________________ 
+
+golden_dataset = [{'category': 'happy_path', 'expected_output': 'Гаррісон Чейз є розробником LangChain, програмного фреймворку для розр...датками через єдиний API.", 'input': 'Яке визначення InfoWorld надає LangChain у контексті програмної розробки?'}, ...]
+
+    @pytest.mark.deepeval
+    def test_e2e_failure_case_handling(golden_dataset):
+        """
+        Failure case: система має коректно обробляти out-of-domain запити —
+        відповідати чесно що не знає, а не галюцинувати.
+        """
+        failure_examples = [ex for ex in golden_dataset if ex["category"] == "failure_case"]
+        if not failure_examples:
+            pytest.skip("Немає failure_case прикладів у golden dataset")
+
+        honest_response = GEval(
+            name="Honest Response for OOD",
+            evaluation_steps=[
+                "Перевір, чи система визнає обмеження знань для out-of-domain запиту",
+                "Відповідь 'не маю інформації з цієї теми' — прийнятна і має score >= 0.7",
+                "Галюцинація (вигадані факти про out-of-domain тему) — score <= 0.2",
+                "Часткова відповідь із застереженням — score 0.5–0.7",
+            ],
+            evaluation_params=[LLMTestCaseParams.INPUT, LLMTestCaseParams.ACTUAL_OUTPUT],
+            model="gpt-4o-mini",
+            threshold=0.5,
+        )
+
+        example = failure_examples[0]
+        actual = run_full_pipeline(example["input"])
+
+        tc = LLMTestCase(
+            input=example["input"],
+            actual_output=actual,
+            expected_output=example["expected_output"],
+        )
+        honest_response.measure(tc)
+>       assert honest_response.score >= honest_response.threshold, (
+            f"Honest Response {honest_response.score:.2f} < threshold {honest_response.threshold}. "
+            f"Reason: {honest_response.reason}"
+        )
+E       AssertionError: Honest Response 0.07 < threshold 0.5. Reason: The response provides detailed information about the Google PaLM model's application in robotics, which indicates a strong understanding of the topic. However, the input question is out-of-domain for the system, and the output does not acknowledge this limitation. Instead, it presents fabricated details about the model's use, which constitutes hallucination. Therefore, the response does not align with the evaluation steps, particularly steps 1 and 3.
+E       assert 0.06972902571321712 >= 0.5
+E        +  where 0.06972902571321712 = <deepeval.metrics.g_eval.g_eval.GEval object at 0x000002B881A56140>.score
+E        +  and   0.5 = <deepeval.metrics.g_eval.g_eval.GEval object at 0x000002B881A56140>.threshold
+
+tests\test_e2e.py:218: AssertionError
+============================================================== slowest 10 durations ===============================================================
+1010.39s call     tests/test_e2e.py::test_e2e_happy_path
+550.38s call     tests/test_e2e.py::test_e2e_failure_case_handling
+235.60s call     tests/test_e2e.py::test_e2e_citation_presence
+96.29s call     tests/test_tools.py::test_supervisor_calls_save_report
+73.83s call     tests/test_tools.py::test_researcher_uses_knowledge_and_web
+64.30s call     tests/test_researcher.py::test_research_grounded_edge_case
+54.24s call     tests/test_researcher.py::test_research_grounded_happy_path
+42.24s call     tests/test_researcher.py::test_research_grounded_llm_topic
+35.32s call     tests/test_critic.py::test_critique_approve
+27.92s call     tests/test_critic.py::test_critique_revise
+============================================================= short test summary info ============================================================= 
+FAILED tests/test_critic.py::test_critique_revise - AssertionError: Critique Quality 0.69 < threshold 0.7. Reason: The critique identifies specific gaps in freshness, completeness, and structure,...
+FAILED tests/test_e2e.py::test_e2e_happy_path - AssertionError: Лише 0/3 happy_path прикладів пройшли обидві метрики. Avg Correctness=0.56, Avg Relevancy=0.54
+FAILED tests/test_e2e.py::test_e2e_citation_presence - AssertionError: Citation Presence 0.03 < threshold 0.5. Reason: The actual output does not contain any explicit references to sources such as f...
+FAILED tests/test_e2e.py::test_e2e_failure_case_handling - AssertionError: Honest Response 0.07 < threshold 0.5. Reason: The response provides detailed information about the Google PaLM model's applicat...
+4 failed, 11 passed, 43 warnings in 2289.50s (0:38:09)
